@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-[#F8FAFC];
+  }
+}
+
+.prose-invert {
+  --tw-prose-body: theme('colors.indigo.100');
+  --tw-prose-headings: theme('colors.white');
+  --tw-prose-lead: theme('colors.indigo.200');
+  --tw-prose-links: theme('colors.white');
+  --tw-prose-bold: theme('colors.white');
+  --tw-prose-counters: theme('colors.indigo.300');
+  --tw-prose-bullets: theme('colors.indigo.400');
+  --tw-prose-hr: theme('colors.indigo.700');
+  --tw-prose-quotes: theme('colors.indigo.100');
+  --tw-prose-quote-borders: theme('colors.indigo.600');
+  --tw-prose-captions: theme('colors.indigo.300');
+  --tw-prose-code: theme('colors.white');
+  --tw-prose-pre-code: theme('colors.indigo.200');
+  --tw-prose-pre-bg: rgba(0, 0, 0, 0.5);
+  --tw-prose-th-borders: theme('colors.indigo.500');
+  --tw-prose-td-borders: theme('colors.indigo.600');
+}
